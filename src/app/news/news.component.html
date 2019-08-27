@@ -1,0 +1,27 @@
+<app-navbar></app-navbar>
+
+
+<body>
+<div id="wrapper">
+  <div id="two-column" class="container">
+      <div class="title">
+          <h2>Recent News</h2>
+      </div>
+    <div id="tbox1" *ngFor="let n of news"> 
+      <!-- <div class="title">
+        <h2>Vestibulum luctus venenatis</h2>
+      </div> -->
+      <a href="#" class="image image-full"><img src="{{ n.image }}" alt="" /></a>
+      <p>{{ n.title }}</p>
+    </div>
+    <!-- <div id="tbox2">
+      <div class="title">
+        <h2>Vestibulum luctus venenatis</h2>
+      </div>
+      <a href="#" class="image image-full"><img src="/assets/img/pic02.jpg" alt="" /></a>
+      <p>Donec leo. Vivamus fermentum nibh in augue. Praesent a lacus at urna congue rutrum. Nulla enim eros, porttitor eu, tempus id, varius non, nibh. Duis enim nulla, luctus eu, dapibus lacinia, venenatis id, quam.</p>
+    </div> -->
+  </div>
+</div>
+
+<app-footer></app-footer>
